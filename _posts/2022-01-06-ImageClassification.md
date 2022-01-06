@@ -1,6 +1,6 @@
 ---
 title : Lecture 2. Image classification
-tags : EECS_498-007
+tags : EECS498-007
 ---
 
 ## Challenges : Semantic Gap 
