@@ -1,5 +1,6 @@
 ---
 title : Lecture 2. Image classification
+tags : EECS 498-007
 ---
 
 # Image Classification 
