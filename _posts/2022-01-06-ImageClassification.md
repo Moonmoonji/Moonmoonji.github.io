@@ -104,7 +104,7 @@ Output : Classification Problem avout whic position on the board should I place 
     * 1.3M training images
     * 50k validadtion images
     * 100K test images (100 per class)
-    * Performance metric : Top 5 accuracy. 5 prediction 중에 하나라도 맞는 게 있으면 correct prediction이라고 간주. 
+    * Performance metric : Top 5 accuracy. 5 prediction 중에 하나라도 맞는 게 있으면 correct prediction이라고 간주. 이미지에서 보통 1개의 object만 존재하는 경우는 거의 없기 때문에. 
     * images have variable size, often resize to 256x256
 
 <br/>
