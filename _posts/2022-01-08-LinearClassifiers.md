@@ -58,6 +58,8 @@ class 마다 hyperplane이 있고 각각의 hyperplane이 고차원의 Euclidean
 
 역사적인 관점에서 보면 Perceptron은 XOR를 학습하지 못했다. Perceptron은 linear classifier의 일종인데, XOR를 학습하지 못하는 이유는 Linear Classifier의 Geometric Viewpoint 때문일 것이다. 
 
+---
+
 ### To Do 
 1. Use a loss function to quantify how good a value W is 
 2. Find a W that minimizes the loss function (optimization)
