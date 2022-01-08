@@ -224,6 +224,6 @@ plugins:
   - jekyll-sitemap
   - jemoji
   
-//_config.yml
-url: "http://Moonmoonji.github.io"
-baseurl: "my-baseurl"
+baseurl: ""
+url: "https://Moonmoonji.github.io"
+
