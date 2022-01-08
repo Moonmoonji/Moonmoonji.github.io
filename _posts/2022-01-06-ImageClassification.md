@@ -136,14 +136,14 @@ Output : Classification Problem avout whic position on the board should I place 
     d_1(I_1,I_2)=\sum_p \left | I_1^p-I_2^p \right |
     $$
     * 그래프에서 경계가 vertical,horizontal, 45도 정도의 기울기를 갖는line으로 이루어져 있다.
-    ![](2022-01-05-00-04-46.png)
+    ![](/assets/img/2022-01-05-00-04-46.png)
     
 2. L2 distance (Euclidean distance)
     $$
     d_2(I_1,I_2) = \sqrt{\sum_{p}^{}(I_1^p-I_2^p)^2}
     $$
     * line이 다양한 방향으로 기울어져 있는 걸 알 수 있다.
-    ![](2022-01-05-00-05-16.png)
+    ![](/assets/img/2022-01-05-00-05-16.png)
 
 - L1 L2 distance의 차이 : 
 <br/>
@@ -202,13 +202,13 @@ NN은 단점이 많은 알고리즘이다. NN은 단 하나의 label만 predicti
 * Idea 3 : Split data into train, val, and test ; choose hyperparameters on val and evaluate on test. Hyperparameter를 찾는 데 테스트 셋을 사용할 수 없다. 만약 test set으로 hyperparameter tuning을 하게 되면 모델이 테스트셋에 과적합(overfitting)되며, 다른 처음보는 데이터에 적용했을 때 상당히 성능이 떨어진다. 따라서 테스트 셋은 반드시 모델 구축이 끝난 후, 단 한 번 평가되어야 한다. Hyperparameter tuning을 위해 validation set을 활용한다. 
 
 * Idea 4 : Cross-Validation : Split data into folds, try each fold as validation and average the results. Useful for small datasets, but not used too frequently in deep learning. 
-![](2022-01-05-00-06-33.png)
+![](/assets/img/2022-01-05-00-06-33.png)
 
 ### Problem : Curse of Dimensionality 
 - 차원이 높아질수록 데이터 사이의 거리가 멀어지고, 빈공간이 증가하는 공간의 성김 현상 (Sparsity) 
 
 ### Raw-pixel을 이용한 모델은 왜 많이 사용되지 않는 가? 
-![](2022-01-05-00-15-46.png)
+![](/assets/img/2022-01-05-00-15-46.png)
 위의 그림에서 original과 shifted를 비교했을 때, 피사체의 위치에 차이만 있을 뿐 물체에는 차이가 없다. 하지만 단지 물체가 옆으로 이동하는 것만으로도 상당한 distance가 생긴다. 따라서 Image classification에서는 pixel value가 아닌 feature vector 사용하는 것이 효과적이다.  
 
 ### Nearest Neighbor with ConvNet feature 
