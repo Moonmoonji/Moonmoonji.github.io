@@ -2,6 +2,7 @@
 title : Lecture 3. Linear Classifiers
 tags : EECS_498-007
 ---
+
 ## Linear Classifier
 Linear Classifier는 단순한 구조이지만 Neural Network를 이루는 중요한 요소이다. 
 
