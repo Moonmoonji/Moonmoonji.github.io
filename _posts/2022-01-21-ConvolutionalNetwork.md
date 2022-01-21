@@ -179,4 +179,6 @@ Convolutional Network의 classic architecture은 [Conv-Relu-Pool]의 반복이�
 
 이러한 Classical architecture은 매우 커지고 매우 deep해져 매우 큰 data를 학습시키기 매우 힘들다는 문제가 있다. 이를 해결하기 위해 normalization 개념이 도입된다. 
 
+## Batch Normalization 
+https://velog.io/@kangtae/EECS-498-007-598-005-72.-Normalization 여기 참고 
 
