@@ -64,18 +64,22 @@ weight matrix는 일정의 3-dimensional structure를 갖는데 이러한 weight
 ## Visual Viewpoint 
 
 1. Linear Classifier 
+<br/>
 ![](/assets/img/2022-01-21-11-26-29.png)
 <br/>
 Linear Classifier는 클래스별로 하나의 weight vector만 가지고 있기에 클래스별 하나의 template만 가진 형태로 볼 수 있다. 
 
 2. Fully-Connected Neural Networks 
+<br/>
 ![](/assets/img/2022-01-21-11-27-47.png)
 <br/> 
 Fully connected neural network의 첫번째 layer를 살펴 보면 우리가 설정한 first hidden layer크기에 대응항하는 W1의 크기만큼 여러개의 template을 갖는 (Bank of whole-image templates을 갖는) 형태였다. 
 
 3. Convolutional Network 
+<br/>
 ![](/assets/img/2022-01-21-11-32-25.png)
 <br/> 
+
 Convolutional Layer는 앞선 위의 2경우와는 달리 input image와 같은 크기의 template을 학습하는 것이 아닌 작고 local한 size의 template을 학습한다. 위의 그림은 AlexNet의 11x11 RGB image를 학습한 첫번째 layer의 filter이다. 이 각각의 filter들은 oriented edge정보와 opposing color 정보 등 low-level feature을 학습한 것으로 볼 수 있다. 
 <br/> 
 이러한 각각의 filter들은 oriented edge, opposing color로 해석되는 정보를 통해 input image의 각 position이 얼마나 다음 hidden layer에 영향을 미치는 정도를 나타낸다. 
