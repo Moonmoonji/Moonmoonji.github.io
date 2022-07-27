@@ -1,5 +1,5 @@
 ---
-title : [논문리뷰] Workload Prediction over Cloud Server using Time Series Data  
+title : <논문리뷰> Workload Prediction over Cloud Server using Time Series Data  
 tags : 논문리뷰 
 ---
 
