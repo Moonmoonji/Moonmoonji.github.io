@@ -19,11 +19,11 @@ tags : 논문리뷰
     - KL divergence vanishing problem 방지를 위해 residual connection 사용 
 
 ## Methodology (MT-RVAE)
-![](2023-01-16-16-53-55.png)
+![](/assets/img/2023-01-16-16-53-55.png)
 <br/>
 
 ### Vanilla Transformer와의 차이점 
-![](2023-01-16-17-04-10.png)
+![](/assets/img/2023-01-16-17-04-10.png)
 <br/>
 
 1. Multiscale Feature Fusion Moudule을 사용
@@ -36,7 +36,7 @@ tags : 논문리뷰
 - 비지도 학습 기반이므로 전처리 시 anomaly 여부를 활용하지 않음
 - 학습 데이터를 기반으로 전체 데이터 정규화 수행 
 - 모델 학습 시, 일정 길이의 window를 생성하여 사용 
-![](2023-01-16-17-06-08.png)
+![](/assets/img/2023-01-16-17-06-08.png)
 <br/> 
 
 ### Multiscale Feature Fusion Module
@@ -45,7 +45,7 @@ tags : 논문리뷰
 - 잘못된 데이터에 대한 모델의 민감도가 감소하여 모델이 시계열 데이터에서 일부 잘못된 데이터를 감지할 수 없게됨 
 - up-sampling 프로세스에서 누락된 세부 정보를 보충하기 위해 Feature Pyramid Structure 사용
 
-![](2023-01-16-17-08-46.png)
+![](/assets/img/2023-01-16-17-08-46.png)
 <br/> 
 
 ### Input Representation 
@@ -70,17 +70,17 @@ Transformer의 sel attention을 통해 feature dimension의 상관관계를 반�
 
 Decoding 능력이 너무 강해서 KL divergence vanishing problem이 발생하지 않게 하기 위해 해당 모듈을 Encoder에만 사용<br/> 
 
-![](2023-01-16-17-27-28.png)
+![](/assets/img/2023-01-16-17-27-28.png)
 
 <br/>
 
 ## Experiment
 ### NAB-MT 데이터셋에 대한 실험 결과 
-![](2023-01-16-17-29-50.png) 
+![](/assets/img/2023-01-16-17-29-50.png) 
 <br/>
 
 ### SKAB 데이터셋에 대한 실험 결과 
-![](2023-01-16-17-32-14.png)
+![](/assets/img/2023-01-16-17-32-14.png)
 
 ## Reference 
 https://www.youtube.com/watch?v=aOkhPG7J7t8 
