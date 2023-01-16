@@ -1,7 +1,9 @@
+---
+title : Taming Transformers for High-Resolution Image Synthesis(2021)
+tags : 논문리뷰 
+---
+
 # 논문 리뷰 : Taming Transformers for High-Resolution Image Synthesis(2021)
-Taming Transformers for High-Resolution Image Synthesis : 초해상도 이미지 합성을 위한 Transformer 길들이기 
-<br/>
-<br/>
 
 ## Introduction 
 CNN은 비전 작업에 사용할 수 있는 믿을수 있는(reliable)한 모델임. 왜냐면 kernel의 사용으로 인해서 CNN이 강한 locality bias와 shared weight의 사용을 통해 spatial invariance에 대한 편향을 보이기 때문임 . <br/>
@@ -64,4 +66,6 @@ VQ-GAN은 adversarial training을 통해 훈련됨. 최적 압축 모델 Q*은 �
 ![](/assets/img/2023-01-16-15-50-24.png)
 <br/>
 
+### Reference 
+https://wandb.ai/wandb_fc/korean/reports/-Transformer-Taming---Vmlldzo1MDA5NTA 
 
