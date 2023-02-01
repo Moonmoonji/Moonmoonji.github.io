@@ -1,5 +1,5 @@
 ---
-title : Memory aware synapses : Learning what (not) to forget (2018)
+title : Memory aware synapses Learning what (not) to forget (2018)
 tags : 논문리뷰 
 ---
 
