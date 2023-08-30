@@ -8,6 +8,8 @@ Self-supervised representation learning에서 주목받는 기술 중 하나는 
 
 ## Introduction 
 실제로, 기대값은 경험적 추정으로 대체됩니다. 각 훈련 데이터 포인트 x에 대해, 일반적으로 하나의 긍정적 예시를 사용합니다. 예를 들어, 그 예시는 변형으로부터 유도될 수 있고, N개의 부정적 예시 x가 사용됩니다.  실제 레이블이나 실제 의미론적 유사성이 일반적으로 사용할 수 없기 때문에, 부정적 대응물은 일반적으로 훈련 데이터에서 균일하게 추출됩니다. 그러나 이것은  negative pair가 실제로 x와 유사할 가능성이 있다는 것을 의미합니다, 이는 그림 1에서 설명되어 있습니다. 이 현상을 샘플링 편향이라고 부르며, 이는 경험적으로 중요한 성능 저하를 초래할 수 있습니다. <br/>
+![](/assets/img/2023-08-31-08-52-24.png)
+<br/>
 
 ![그림 1](2023-08-30-11-02-25.png)
 <br/>
@@ -21,6 +23,8 @@ $p_x^-(x')$, $p_x^+(x')$ 각각은 $x'$가 $x$의 true negative/positive pair일
 
 ### Sampling Bias 
 직관적으로, 양수 및 음수 쌍이 원하는 잠재 클래스에 해당하는 경우 대조 손실은 다운스트림 분류 작업에 가장 유익한 표현을 제공합니다. 따라서 최적화를 위한 이상적인 손실은 수식(2)와 같이 편향되지 않은 손실입니다. <br/>
+![](/assets/img/2023-08-31-08-52-59.png)
+<br/> 
 
 ![](/assets/img/2023-08-30-11-16-01.png)
 <br/>
@@ -41,6 +45,8 @@ MoCo 등의 최근 방법들은 N=65536 등의 큰 숫자르 사용하기 때문
 따라서 위의 부등식은 딱히 reliable한 관계를 주지는 못합니다.
 이 논문에서는 class probability에 대한 prior를 통해 더 낮은 bias를 가지는 loss estimator를 찾습니다.
 조금 더 자세히 말하면, negative pair 중 positive pair의 갯수가 몇 개인지에 따른 risk를 class probability prior를 통해 근사하는 것입니다.<br/>
+![](assets/img/2023-08-31-08-53-55.png)
+<br/>
 ![](/assets/img/2023-08-30-11-29-23.png)
 <br/>
 먼저, data distribution을 위와같이 decompose합시다. (둘의 support는 disjoint하다고 가정하는 것 같습니다)
